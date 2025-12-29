@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Job Openings - HireHUB | Latest Job Opportunities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- HEADER/NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <i class="fas fa-briefcase"></i> HireHUB
+  </div>
+  <nav class="nav-menu">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="company.html" class="nav-link">Company</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="jobs.html" class="nav-link">Jobs</a>
+    <a href="insights.html" class="nav-link">Insights</a>
+    <a href="index.html#faqs" class="nav-link">FAQs</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+  <div class="hamburger" id="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- BREADCRUMB -->
+<div class="breadcrumb">
+  <div class="breadcrumb-content">
+    <a href="index.html"><i class="fas fa-home"></i> Home</a>
+    <span class="separator">/</span>
+    <span class="current">Job Openings</span>
+  </div>
+</div>
+
+<!-- JOBS SECTION -->
+<section id="jobs" class="section jobs-section">
+  <div class="section-header">
+    <h2>Latest Job Openings</h2>
+    <p class="section-subtitle">Discover Exciting Opportunities</p>
+  </div>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All Jobs</button>
+    <button class="filter-btn" data-filter="fresher">For Freshers</button>
+    <button class="filter-btn" data-filter="experienced">Experienced</button>
+  </div>
+
+  <div class="job-container">
+
+    <!-- JOB CARD 1 -->
+    <div class="job-card slide-up" data-category="fresher">
+      <div class="job-card-image">
+        <img src="/HR and Recruiter Agency/images/SoftwareEngineer.jpg" alt="Google Job">
+      </div>
+      <div class="job-header">
+        <div class="company-logo">
+          <i class="fab fa-google"></i>
+        </div>
+        <div class="job-meta">
+          <h3>Software Engineer</h3>
+          <p class="company">Google</p>
+        </div>
+        <span class="job-badge">Fresher</span>
+      </div>
+
+      <div class="job-details">
+        <div class="detail-item">
+          <i class="fas fa-code"></i>
+          <span>Java, DSA, Spring Boot</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-briefcase"></i>
+          <span>0–2 Years</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Bangalore</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>₹6–10 LPA</span>
+        </div>
+      </div>
+
+      <p class="job-desc">Join Google's engineering team and work on world-class products used by billions.</p>
+
+      <div class="job-footer">
+        <span class="posted-time">Posted 2 days ago</span>
+        <button class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- JOB CARD 2 -->
+    <div class="job-card slide-up" data-category="experienced">
+      <div class="job-card-image">
+        <img src="/HR and Recruiter Agency/images/frontend.jpg" alt="Microsoft Job">
+      </div>
+      <div class="job-header">
+        <div class="company-logo">
+          <i class="fab fa-microsoft"></i>
+        </div>
+        <div class="job-meta">
+          <h3>Frontend Developer</h3>
+          <p class="company">Microsoft</p>
+        </div>
+        <span class="job-badge experienced">Experienced</span>
+      </div>
+
+      <div class="job-details">
+        <div class="detail-item">
+          <i class="fas fa-code"></i>
+          <span>React, TypeScript, Next.js</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-briefcase"></i>
+          <span>1–3 Years</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Hyderabad</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>₹8–15 LPA</span>
+        </div>
+      </div>
+
+      <p class="job-desc">Build stunning user interfaces for Microsoft's cutting-edge applications.</p>
+
+      <div class="job-footer">
+        <span class="posted-time">Posted 1 day ago</span>
+        <button class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- JOB CARD 3 -->
+    <div class="job-card slide-up" data-category="fresher">
+      <div class="job-card-image">
+        <img src="/HR and Recruiter Agency/images/systemengineer.jpg" alt="Infosys Job">
+      </div>
+      <div class="job-header">
+        <div class="company-logo">
+          <i class="fas fa-laptop"></i>
+        </div>
+        <div class="job-meta">
+          <h3>System Engineer</h3>
+          <p class="company">Infosys</p>
+        </div>
+        <span class="job-badge">Fresher</span>
+      </div>
+
+      <div class="job-details">
+        <div class="detail-item">
+          <i class="fas fa-code"></i>
+          <span>Python, SQL, Linux</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-briefcase"></i>
+          <span>Fresher</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Pune</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>₹4–6 LPA</span>
+        </div>
+      </div>
+
+      <p class="job-desc">Start your career with Infosys and grow with India's IT leader.</p>
+
+      <div class="job-footer">
+        <span class="posted-time">Posted 3 days ago</span>
+        <button class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- JOB CARD 4 -->
+    <div class="job-card slide-up" data-category="experienced">
+      <div class="job-card-image">
+        <img src="/HR and Recruiter Agency/images/cloudengineer.jpg" alt="Amazon Job">
+      </div>
+      <div class="job-header">
+        <div class="company-logo">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <div class="job-meta">
+          <h3>Cloud Architect</h3>
+          <p class="company">Amazon</p>
+        </div>
+        <span class="job-badge experienced">Experienced</span>
+      </div>
+
+      <div class="job-details">
+        <div class="detail-item">
+          <i class="fas fa-code"></i>
+          <span>AWS, Kubernetes, Docker</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-briefcase"></i>
+          <span>2–5 Years</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Delhi</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>₹12–18 LPA</span>
+        </div>
+      </div>
+
+      <p class="job-desc">Design scalable cloud solutions for Amazon's global infrastructure.</p>
+
+      <div class="job-footer">
+        <span class="posted-time">Posted 1 day ago</span>
+        <button class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Job Search Tips -->
+  <div class="job-search-tips">
+    <h3><i class="fas fa-lightbulb"></i> Tips for Successful Job Search</h3>
+    <div class="tips-grid">
+      <div class="tip-item fade-in-left">
+        <div class="tip-icon"><i class="fas fa-check-circle"></i></div>
+        <h4>Optimize Your Profile</h4>
+        <p>Keep your profile updated with latest skills, certifications, and achievements</p>
+      </div>
+      <div class="tip-item fade-in-up">
+        <div class="tip-icon"><i class="fas fa-check-circle"></i></div>
+        <h4>Apply Actively</h4>
+        <p>Apply to 5-10 relevant positions weekly to increase your chances of success</p>
+      </div>
+      <div class="tip-item fade-in-right">
+        <div class="tip-icon"><i class="fas fa-check-circle"></i></div>
+        <h4>Prepare Well</h4>
+        <p>Research companies and practice mock interviews before applying</p>
+      </div>
+      <div class="tip-item bounce-in">
+        <div class="tip-icon"><i class="fas fa-check-circle"></i></div>
+        <h4>Network Actively</h4>
+        <p>Build connections with professionals on LinkedIn and at industry events</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>HireHUB</h4>
+      <p>Your trusted partner in career growth</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="jobs.html">Jobs</a></li>
+        <li><a href="services.html">Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 HireHUB. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- CHATBOT -->
+<div class="chatbot-wrapper">
+  <button class="chatbot-toggle" id="chatToggle" title="Toggle Chat">
+    <i class="fas fa-comments"></i>
+  </button>
+  <div class="chatbot" id="chatbot">
+    <div class="chat-header">
+      <div class="chat-header-content">
+        <h3>HR Assistant</h3>
+        <p class="chat-status">Online</p>
+      </div>
+      <button class="chat-close" id="closeChat">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="welcome-message">
+        <i class="fas fa-robot"></i>
+        <h4>Welcome to HR Assistant</h4>
+        <p>Ask me anything about jobs, companies, or our services!</p>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off" />
+      <button onclick="sendMessage()" class="send-btn" title="Send message">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP BUTTON -->
+<button class="scroll-to-top" id="scrollToTop">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+</body>
+</html>
