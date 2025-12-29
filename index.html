@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>HirePoint - HR & Recruitment Agency</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- HEADER/NAVBAR -->
+<header class="navbar">
+  <div class="logo">
+    <i class="fas fa-briefcase"></i> HireHUB
+  </div>
+  <nav class="nav-menu">
+    <a href="#home" class="nav-link">Home</a>
+    <a href="#about" class="nav-link">About</a>
+    <a href="#services" class="nav-link">Services</a>
+    <a href="#jobs" class="nav-link">Jobs</a>
+    <a href="#insights" class="nav-link">Insights</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </nav>
+  <div class="hamburger" id="hamburger-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- HERO SECTION -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Your Gateway to Dream Jobs</h1>
+    <p class="hero-subtitle">Connect with Top Companies & Unlock Your Career Potential</p>
+    <button class="cta-button" onclick="document.getElementById('jobs').scrollIntoView({behavior: 'smooth'})">
+      Explore Jobs <i class="fas fa-arrow-right"></i>
+    </button>
+  </div>
+  <div class="hero-image">
+    <img src="/HR and Recruiter Agency/images/dreamjob.jpg" class="hero-img">
+  </div>
+  <div class="hero-animation">
+    <div class="animated-shape shape-1"></div>
+    <div class="animated-shape shape-2"></div>
+    <div class="animated-shape shape-3"></div>
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="section about-section">
+  <div class="section-header">
+    <h2>About Us</h2>
+    <p class="section-subtitle">Transforming Careers Since 2020</p>
+  </div>
+  
+  <div class="about-container">
+    <div class="about-card fade-in-left">
+      <div class="card-image">
+        <img src="/HR and Recruiter Agency/images/placement.jpg" alt="Team work">
+      </div>
+      <div class="icon-circle">
+        <i class="fas fa-users"></i>
+      </div>
+      <h3>500+ Placements</h3>
+      <p>Successfully placed talented professionals in leading companies</p>
+    </div>
+    
+    <div class="about-card fade-in-up">
+      <div class="card-image">
+        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=300&h=250&fit=crop" alt="Building">
+      </div>
+      <div class="icon-circle">
+        <i class="fas fa-building"></i>
+      </div>
+      <h3>50+ Companies</h3>
+      <p>Partner with India's top tech and Fortune 500 companies</p>
+    </div>
+    
+    <div class="about-card fade-in-right">
+      <div class="card-image">
+        <img src="/HR and Recruiter Agency/images/success.jpg" alt="Success">
+      </div>
+      <div class="icon-circle">
+        <i class="fas fa-star"></i>
+      </div>
+      <h3>100% Success</h3>
+      <p>Dedicated support from interview prep to job placement</p>
+    </div>
+  </div>
+
+  <div class="about-text slide-in">
+    <h3>Why Choose HirePoint?</h3>
+    <p>We are a professional HR and recruitment agency helping students and job seekers find opportunities 
+    in reputed companies across India. Our expert team provides personalized guidance, interview preparation, 
+    and career counseling to ensure your success.</p>
+  </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="section services-section">
+  <div class="section-header">
+    <h2>Our Services</h2>
+    <p class="section-subtitle">Comprehensive Recruitment Solutions</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card bounce-in">
+      <div class="service-image">
+        <img src="/HR and Recruiter Agency/images/JobSearch.jpg" alt="Job Search">
+      </div>
+      <div class="service-icon">
+        <i class="fas fa-search"></i>
+      </div>
+      <h3>Job Search</h3>
+      <p>Find perfect job matches with advanced filters and personalized recommendations</p>
+    </div>
+
+    <div class="service-card bounce-in">
+      <div class="service-image">
+        <img src="/HR and Recruiter Agency/images/resume.jpg" alt="Resume">
+      </div>
+      <div class="service-icon">
+        <i class="fas fa-file-alt"></i>
+      </div>
+      <h3>Resume Optimization</h3>
+      <p>Get your resume reviewed and optimized by industry experts</p>
+    </div>
+
+    <div class="service-card bounce-in">
+      <div class="service-image">
+        <img src="/HR and Recruiter Agency/images/interview.jpg" alt="Interview">
+      </div>
+      <div class="service-icon">
+        <i class="fas fa-graduation-cap"></i>
+      </div>
+      <h3>Interview Prep</h3>
+      <p>Master interview techniques with mock interviews and expert feedback</p>
+    </div>
+
+    <div class="service-card bounce-in">
+      <div class="service-image">
+        <img src="/HR and Recruiter Agency/images/corporate.jpg" alt="Matching">
+      </div>
+      <div class="service-icon">
+        <i class="fas fa-handshake"></i>
+      </div>
+      <h3>Corporate Matching</h3>
+      <p>Connect with employers looking for your specific skills and experience</p>
+    </div>
+  </div>
+</section>
+
+<!-- JOBS SECTION -->
+<section id="jobs" class="section jobs-section">
+  <div class="section-header">
+    <h2>Latest Job Openings</h2>
+    <p class="section-subtitle">Discover Exciting Opportunities</p>
+  </div>
+
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All Jobs</button>
+    <button class="filter-btn" data-filter="fresher">For Freshers</button>
+    <button class="filter-btn" data-filter="experienced">Experienced</button>
+  </div>
+
+  <div class="job-container">
+
+    <!-- JOB CARD 1 -->
+    <div class="job-card slide-up" data-category="fresher">
+      <div class="job-card-image">
+        <img src="/HR and Recruiter Agency/images/SoftwareEngineer.jpg" alt="Google Job">
+      </div>
+      <div class="job-header">
+        <div class="company-logo">
+          <i class="fab fa-google"></i>
+        </div>
+        <div class="job-meta">
+          <h3>Software Engineer</h3>
+          <p class="company">Google</p>
+        </div>
+        <span class="job-badge">Fresher</span>
+      </div>
+
+      <div class="job-details">
+        <div class="detail-item">
+          <i class="fas fa-code"></i>
+          <span>Java, DSA, Spring Boot</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-briefcase"></i>
+          <span>0–2 Years</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Bangalore</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>₹6–10 LPA</span>
+        </div>
+      </div>
+
+      <p class="job-desc">Join Google's engineering team and work on world-class products used by billions.</p>
+
+      <div class="job-footer">
+        <span class="posted-time">Posted 2 days ago</span>
+        <button class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- JOB CARD 2 -->
+    <div class="job-card slide-up" data-category="experienced">
+      <div class="job-card-image">
+        <img src="/HR and Recruiter Agency/images/frontend.jpg" alt="Microsoft Job">
+      </div>
+      <div class="job-header">
+        <div class="company-logo">
+          <i class="fab fa-microsoft"></i>
+        </div>
+        <div class="job-meta">
+          <h3>Frontend Developer</h3>
+          <p class="company">Microsoft</p>
+        </div>
+        <span class="job-badge experienced">Experienced</span>
+      </div>
+
+      <div class="job-details">
+        <div class="detail-item">
+          <i class="fas fa-code"></i>
+          <span>React, TypeScript, Next.js</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-briefcase"></i>
+          <span>1–3 Years</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Hyderabad</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>₹8–15 LPA</span>
+        </div>
+      </div>
+
+      <p class="job-desc">Build stunning user interfaces for Microsoft's cutting-edge applications.</p>
+
+      <div class="job-footer">
+        <span class="posted-time">Posted 1 day ago</span>
+        <button class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- JOB CARD 3 -->
+    <div class="job-card slide-up" data-category="fresher">
+      <div class="job-card-image">
+        <img src="/HR and Recruiter Agency/images/systemengineer.jpg" alt="Infosys Job">
+      </div>
+      <div class="job-header">
+        <div class="company-logo">
+          <i class="fas fa-laptop"></i>
+        </div>
+        <div class="job-meta">
+          <h3>System Engineer</h3>
+          <p class="company">Infosys</p>
+        </div>
+        <span class="job-badge">Fresher</span>
+      </div>
+
+      <div class="job-details">
+        <div class="detail-item">
+          <i class="fas fa-code"></i>
+          <span>Python, SQL, Linux</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-briefcase"></i>
+          <span>Fresher</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Pune</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>₹4–6 LPA</span>
+        </div>
+      </div>
+
+      <p class="job-desc">Start your career with Infosys and grow with India's IT leader.</p>
+
+      <div class="job-footer">
+        <span class="posted-time">Posted 3 days ago</span>
+        <button class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+    <!-- JOB CARD 4 -->
+    <div class="job-card slide-up" data-category="experienced">
+      <div class="job-card-image">
+        <img src="/HR and Recruiter Agency/images/cloudengineer.jpg" alt="Amazon Job">
+      </div>
+      <div class="job-header">
+        <div class="company-logo">
+          <i class="fas fa-cloud"></i>
+        </div>
+        <div class="job-meta">
+          <h3>Cloud Architect</h3>
+          <p class="company">Amazon</p>
+        </div>
+        <span class="job-badge experienced">Experienced</span>
+      </div>
+
+      <div class="job-details">
+        <div class="detail-item">
+          <i class="fas fa-code"></i>
+          <span>AWS, Kubernetes, Docker</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-briefcase"></i>
+          <span>2–5 Years</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Delhi</span>
+        </div>
+        <div class="detail-item">
+          <i class="fas fa-rupee-sign"></i>
+          <span>₹12–18 LPA</span>
+        </div>
+      </div>
+
+      <p class="job-desc">Design scalable cloud solutions for Amazon's global infrastructure.</p>
+
+      <div class="job-footer">
+        <span class="posted-time">Posted 1 day ago</span>
+        <button class="apply-btn">Apply Now <i class="fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- COMPANIES SECTION -->
+<section id="companies" class="section companies-section">
+  <div class="section-header">
+    <h2>Our Hiring Partners</h2>
+    <p class="section-subtitle">Top Companies Recruiting Through HireHub</p>
+  </div>
+
+  <div class="companies-slider">
+    <div class="slider-track">
+      <!-- Company 1 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/google.jpg" alt="Google">
+        <p>Google</p>
+      </div>
+      <!-- Company 2 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/microsoft.jpg" alt="Microsoft">
+        <p>Microsoft</p>
+      </div>
+      <!-- Company 3 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/amazon.jpg" alt="Amazon">
+        <p>Amazon</p>
+      </div>
+      <!-- Company 4 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/apple.jpg" alt="Apple">
+        <p>Apple</p>
+      </div>
+      <!-- Company 5 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/meta.jpg" alt="Facebook">
+        <p>Meta</p>
+      </div>
+      <!-- Company 6 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/tesla.jpg" alt="Tesla">
+        <p>Tesla</p>
+      </div>
+      <!-- Company 7 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/ibm.jpg" alt="IBM">
+        <p>IBM</p>
+      </div>
+      <!-- Company 8 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/oracle.jpg" alt="Oracle">
+        <p>Oracle</p>
+      </div>
+      <!-- Company 9 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/infosys.jpg" alt="Infosys">
+        <p>Infosys</p>
+      </div>
+      <!-- Company 10 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/tcs.jpg" alt="TCS">
+        <p>TCS</p>
+      </div>
+      <!-- Company 11 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/wipro.jpg" alt="Wipro">
+        <p>Wipro</p>
+      </div>
+      <!-- Company 12 -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/accenture.jpg" alt="Accenture">
+        <p>Accenture</p>
+      </div>
+      <!-- Duplicate for infinite scrolling effect -->
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/google.jpg" alt="Google">
+        <p>Google</p>
+      </div>
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/microsoft.jpg" alt="Microsoft">
+        <p>Microsoft</p>
+      </div>
+      <div class="company-logo-box">
+        <img src="/HR and Recruiter Agency/images/amazon.jpg" alt="Amazon">
+        <p>Amazon</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INSIGHTS SECTION -->
+<section id="insights" class="section insights-section">
+  <div class="section-header">
+    <h2>Industry Insights</h2>
+    <p class="section-subtitle">Stay Updated with Latest Recruitment Trends</p>
+  </div>
+
+  <div class="insights-container">
+    <div class="insight-card fade-in-left">
+      <div class="insight-image">
+        <img src="/HR and Recruiter Agency/images/hiring.jpg" alt="Hiring Trends">
+      </div>
+      <div class="insight-content">
+        <span class="insight-date">Dec 29, 2025</span>
+        <h3>Top 10 Hiring Trends in 2025</h3>
+        <p>Discover the most sought-after skills and emerging job roles that are reshaping the tech industry. Remote work, AI expertise, and cloud technologies dominate the market.</p>
+        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="insight-card fade-in-up">
+      <div class="insight-image">
+        <img src="/HR and Recruiter Agency/images/Nextinterview.jpg" alt="Interview Tips">
+      </div>
+      <div class="insight-content">
+        <span class="insight-date">Dec 25, 2025</span>
+        <h3>Ace Your Next Interview</h3>
+        <p>Learn proven strategies to impress recruiters and land your dream job. From resume optimization to behavioral interview techniques, we cover it all.</p>
+        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="insight-card fade-in-right">
+      <div class="insight-image">
+        <img src="/HR and Recruiter Agency/images/Salary.jpg" alt="Salary Insights">
+      </div>
+      <div class="insight-content">
+        <span class="insight-date">Dec 20, 2025</span>
+        <h3>Tech Salary Guide 2025</h3>
+        <p>Comprehensive salary insights for different tech roles and experience levels. Know your worth and negotiate confidently with employers in India.</p>
+        <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-container">
+    <div class="stat-box pulse">
+      <h4>95%</h4>
+      <p>Placement Success Rate</p>
+    </div>
+
+    <div class="stat-box pulse">
+      <h4>500+</h4>
+      <p>Career Placements</p>
+    </div>
+
+    <div class="stat-box pulse">
+      <h4>50+</h4>
+      <p>Partner Companies</p>
+    </div>
+
+    <div class="stat-box pulse">
+      <h4>₹6-18 LPA</h4>
+      <p>Average Salary Range</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="section contact-section">
+  <div class="section-header">
+    <h2>Get In Touch</h2>
+    <p class="section-subtitle">We'd love to hear from you</p>
+  </div>
+
+  <div class="contact-container">
+    <div class="contact-image">
+      <img src="/HR and Recruiter Agency/images/getintouch.jpg" alt="Contact Us">
+    </div>
+    <div class="contact-info">
+      <div class="info-card pulse">
+        <div class="info-icon">
+          <i class="fas fa-phone"></i>
+        </div>
+        <h4>Phone</h4>
+        <p>+91 9876543210</p>
+      </div>
+
+      <div class="info-card pulse">
+        <div class="info-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <h4>Email</h4>
+        <p>info@hirepoint.com</p>
+      </div>
+
+      <div class="info-card pulse">
+        <div class="info-icon">
+          <i class="fas fa-map-marker-alt"></i>
+        </div>
+        <h4>Location</h4>
+        <p>Bangalore, India</p>
+      </div>
+    </div>
+
+    <form class="contact-form slide-in-right">
+      <div class="form-group">
+        <input type="text" placeholder="Your Name" required>
+        <i class="fas fa-user"></i>
+      </div>
+      <div class="form-group">
+        <input type="email" placeholder="Your Email" required>
+        <i class="fas fa-envelope"></i>
+      </div>
+      <div class="form-group">
+        <input type="text" placeholder="Subject" required>
+        <i class="fas fa-heading"></i>
+      </div>
+      <div class="form-group">
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <i class="fas fa-message"></i>
+      </div>
+      <button type="submit" class="submit-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section">
+      <h4>HireHUB</h4>
+      <p>Your trusted partner in career growth</p>
+    </div>
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#jobs">Jobs</a></li>
+      </ul>
+    </div>
+    <div class="footer-section">
+      <h4>Follow Us</h4>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 HireHUB. All rights reserved.</p>
+  </div>
+</footer>
+
+<!-- CHATBOT -->
+<div class="chatbot-wrapper">
+  <button class="chatbot-toggle" id="chatToggle" title="Toggle Chat">
+    <i class="fas fa-comments"></i>
+  </button>
+  <div class="chatbot" id="chatbot">
+    <div class="chat-header">
+      <div class="chat-header-content">
+        <h3>HR Assistant</h3>
+        <p class="chat-status">Online</p>
+      </div>
+      <button class="chat-close" id="closeChat">&times;</button>
+    </div>
+    <div class="chat-body" id="chatBody">
+      <div class="welcome-message">
+        <i class="fas fa-robot"></i>
+        <h4>Welcome to HR Assistant</h4>
+        <p>Ask me anything about jobs, companies, or our services!</p>
+      </div>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your message..." autocomplete="off" />
+      <button onclick="sendMessage()" class="send-btn" title="Send message">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- SCROLL TO TOP BUTTON -->
+<button class="scroll-to-top" id="scrollToTop">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+</body>
+</html>
+
